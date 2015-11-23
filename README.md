@@ -2,6 +2,12 @@
 
 This Docker image can be used to serve or export a [Jekyll](http://jekyllrb.com)-based [GitHub Pages](https://pages.github.com) site.
 
+The image can be found [here](https://hub.docker.com/r/hyleung/gh-pages/) on Docker Hub.
+
+To pull the image down:
+
+    docker pull hyleung/gh-pages
+
 ## Usage
 You'll use a volume mount (`-v`) to mount the Jekyll source director into the Docker container volume (`/gh-pages`) and run the container with either:
 
