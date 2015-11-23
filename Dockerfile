@@ -13,9 +13,9 @@ ADD scripts/* /scripts
 RUN chmod a+x /scripts/*.sh
 
 VOLUME /gh-pages
-
 WORKDIR /gh-pages
 
 EXPOSE 4000
 
-CMD ["/scripts/jekyll-serve.sh"]
+ENTRYPOINT ["/scripts/jekyll.sh"]
+CMD ["serve"]
